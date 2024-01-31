@@ -1,6 +1,6 @@
 import sqlite3
 from pathlib import Path
-
+import os
 ''' 
 NOTE:
 
@@ -8,9 +8,13 @@ NOTE:
     populated before continuing
 
 '''
+# change directory
+path= Path(__file__).parent
+os.chdir(path)
+
 
 # 1) CONNECT
-conn = sqlite3.connect('bookstore.db')
+conn = sqlite3.connect('./bookstore.db')
 
     # create cursor
 cursor= conn.cursor()
@@ -22,8 +26,9 @@ for record in records:
     print(record)
     
 # UPDATE
-sql_update_query = 'UPDATE authors SET author_name = "Jeremiah Brown" WHERE "author_id" = 1;'
+sql_update_query = "UPDATE authors SET author_name = 'Jeremiah Brown' WHERE author_id = 1;"
 cursor.execute(sql_update_query)
+conn.commit()
 
 # READ_2
 sql_query = 'SELECT * FROM authors'
