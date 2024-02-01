@@ -1,18 +1,28 @@
-# correct the mistakes and add the code required to complete TASK 5 
-
 import sqlite3
-from pathlib import Path
 
 # CREATE DATABASE
-# $ sqlite3 bookstore.db
 
-# 1) CONNECT
-conn = sqlite3.connect('bookstore.db')
-# 2) CREATE
+    # $ sqlite3 
+        # sqlite> .open bookstore.db 
+        
+# POPULATE DATABASE
 
-# 3) READ
+    # sqlite3 bookstore.db < [name of queryfile.sql]
+    
+# VIEW TABLES IN SQLite3
 
-# 4) UPDATE
+    # $sqlite3 bookstore.db
+        # sqlite3> .tables
+        
 
+# --When tables are visible in the DB you may proceed--
+       
+# step 1) CONNECT
 
-# 5) DELETE
+# step 2) CREATE
+
+# step 3) READ
+
+# step 4) UPDATE
+
+# step 5) DELETE

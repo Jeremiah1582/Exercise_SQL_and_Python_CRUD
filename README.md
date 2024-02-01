@@ -45,7 +45,7 @@ Run the following commands:
             sqlite> .open bookstore.db
             sqlite> .quit
 
-    This command creates a new SQLite database file named bookstore.db.
+    Notice that this command creates a new empty SQLite database file named bookstore.db.
 
 3) Executing SQL Commands:
 - Copy the SQL script provided below into a new text file (e.g., setup.sql).
