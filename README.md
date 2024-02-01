@@ -11,7 +11,8 @@ __Requirements:__
 - Access to a terminal or command prompt.
 - A text editor to create SQL scripts.
 
-1) Install SQLite:
+1)  Install SQLite:
+*NOTE-If you have SQLite installed, you can skip the first step.*
 
 Follow the instructions below to install SQLite on your system.
 *For Linux:*
